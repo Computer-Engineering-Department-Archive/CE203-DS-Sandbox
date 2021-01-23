@@ -1,11 +1,9 @@
 # DSS (Data Structure & Algorithms Sandbox)
 
 ## Unmet needs
-___
 Why am I doing this? I have always looked for a compact **database** that contains different **data structures**.
 
 ## Objectives
-___
 Gathering different types of **data structure** in different programming languages.
 
 What programming languages will be used for implementing?
@@ -15,21 +13,17 @@ What programming languages will be used for implementing?
 * **Python3**
 
 ## User personas
-___
 entry-level software **developers** and computer science students
 
 ## Usage
-___
 ```git clone https://github.com/bardia-ardakanian/DSS.git```
 
 ## How to Contribute
-___
 1. Clone repo and create a new branch: ```$ git checkout https://github.com/bardia-ardakanian/DSS.git```
 2. Make changes and test
 3. Submit Pull Request with comprehensive description of changes
 
 ## Content
-___
 * **Sorting Algorithms**
     * Bubble sort
     * Insertion sort
@@ -78,10 +72,8 @@ ___
     * Directed Acyclic Graph
 
 ## References
-___
 * [Codes Dope](https://www.codesdope.com/)
 * Introduction to Algorithms CLRS
 
 ## Contributes
-___
 * [Bardia Ardakaian](https://github.com/bardia-ardakanian)
