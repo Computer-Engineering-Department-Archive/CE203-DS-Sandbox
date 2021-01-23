@@ -76,4 +76,8 @@ entry-level software **developers** and computer science students
 * Introduction to Algorithms CLRS
 
 ## Contributes
+<<<<<<< HEAD
 * [Bardia Ardakaian](https://github.com/bardia-ardakanian)
+=======
+* [Bardia Ardakaian](https://github.com/bardia-ardakanian)
+>>>>>>> 8c733f545081446fd3732f5de22b20cb59b3f6cc
