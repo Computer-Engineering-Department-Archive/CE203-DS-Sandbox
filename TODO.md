@@ -6,6 +6,7 @@
 - [ ] Merge sort
 - [ ] Selection sort
 - [ ] Insertion sort
+- [ ] Shell sort
 - [ ] Heap sort
 - [ ] Quick sort
 
@@ -49,3 +50,12 @@
 - [ ] Floyd warshall
 - [ ] Johnson
 - [ ] Directed Acyclic Graph
+### **Hash Tables**
+- [ ] Open addressing
+- [ ] linear probing
+- [ ] quadratic probing
+- [ ] double hashing
+- [ ] Chaining
+### **Recursion**
+- [ ] Fibonacci
+- [ ] Tower of Hanoi

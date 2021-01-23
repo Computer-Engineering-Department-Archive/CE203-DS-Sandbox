@@ -30,6 +30,7 @@ entry-level software **developers** and computer science students
     * Merge sort
     * Selection sort
     * Insertion sort
+    * Shell sort
     * Heap sort
     * Quick sort
 * **Searching Algorithms**
@@ -70,14 +71,19 @@ entry-level software **developers** and computer science students
     * Floyd warshall
     * Johnson
     * Directed Acyclic Graph
+* **Hash Tables**
+    * Open addressing
+        * linear probing
+        * quadratic probing
+        * double hashing
+    * Chaining
+* **Recursion**
+    * Fibonacci
+    * Tower of Hanoi
 
 ## References
 * [Codes Dope](https://www.codesdope.com/)
 * Introduction to Algorithms CLRS
 
 ## Contributes
-<<<<<<< HEAD
 * [Bardia Ardakaian](https://github.com/bardia-ardakanian)
-=======
-* [Bardia Ardakaian](https://github.com/bardia-ardakanian)
->>>>>>> 8c733f545081446fd3732f5de22b20cb59b3f6cc
