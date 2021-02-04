@@ -1,4 +1,4 @@
-# DSS (Data Structure & Algorithms Sandbox)
+# DSA (Data Structure & Algorithms Database)
 
 ## Unmet needs
 Why am I doing this? I have always looked for a compact **database** that contains different **data structures**.
