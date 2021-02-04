@@ -1,11 +1,10 @@
 ## Algorithms
 
 ### **Sorting Algorithms**
-- [ ] Bubble sort
-- [ ] Insertion sort
+- [x] Bubble sort
+- [x] Insertion sort
 - [ ] Merge sort
 - [ ] Selection sort
-- [ ] Insertion sort
 - [ ] Shell sort
 - [ ] Heap sort
 - [ ] Quick sort
