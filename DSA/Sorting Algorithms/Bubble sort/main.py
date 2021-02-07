@@ -6,11 +6,7 @@ def bubbleSort(arr):
             if arr[j] > arr[j+1]:
                 arr[j],arr[j+1] = arr[j+1],arr[j]
 
-# Driver code
-arr = []
-n = int(input())
-for i in range(n):
-    arr.append(int(input()))
+arr = [11, 25, 12, 22, 64]
 
 bubbleSort(arr)
 print(arr)

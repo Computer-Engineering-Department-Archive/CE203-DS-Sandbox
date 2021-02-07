@@ -10,11 +10,7 @@ def insertionSort(arr):
         
         arr[j+1] = key
 
-# Driver code
-arr = []
-n = int(input())
-for i in range(n):
-    arr.append(int(input()))
+arr = [11, 25, 12, 22, 64]
 
 insertionSort(arr)
 print(arr)

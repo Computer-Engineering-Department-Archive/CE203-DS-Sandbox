@@ -29,9 +29,7 @@ entry-level software **developers** and computer science students
     * Insertion sort
     * Merge sort
     * Selection sort
-    * Insertion sort
     * Shell sort
-    * Heap sort
     * Quick sort
 * **Searching Algorithms**
     * Linear search
@@ -83,6 +81,7 @@ entry-level software **developers** and computer science students
 
 ## References
 * [Codes Dope](https://www.codesdope.com/)
+* [Tutorials Point](https://www.tutorialspoint.com/index.htm)
 * Introduction to Algorithms CLRS
 
 ## Contributes
