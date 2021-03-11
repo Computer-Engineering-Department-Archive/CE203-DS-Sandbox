@@ -38,6 +38,7 @@ entry-level software **developers** and computer science students
     * Fibonacci search
     * Sub-list search
     * Jump search
+    * Interpolation Search
 * **Linked Lists**
     * Linked List
     * Doubly Linked List

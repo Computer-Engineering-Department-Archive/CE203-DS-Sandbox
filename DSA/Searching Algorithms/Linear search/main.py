@@ -1,8 +1,8 @@
-def linearSearch(arr, key):
+def linearSearch(arr, x):
     length = len(arr)
 
     for i in range(length):
-        if arr[i] == key:
+        if arr[i] == x:
             return i
 
     return -1
