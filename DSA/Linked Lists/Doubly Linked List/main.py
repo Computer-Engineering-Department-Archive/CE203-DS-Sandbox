@@ -1,10 +1,11 @@
-class Node:
+class Node():
 
     def __init__(self, data):
         self.data = data
         self.next = None
+        self.prev = None
 
-class LinkedList:
+class LinkedList():
 
     def __init__(self):
         self.head = None
@@ -20,8 +21,14 @@ class LinkedList:
         print(out + 'None')
 
     def add_front(self, data):
+        # if the list is empty
+        if self.head is None:
+            self.head = Node(data)
+            return
+
         newNode = Node(data)
         newNode.next = self.head
+        self.head.prev = newNode
         self.head = newNode
 
     def add_end(self, data):
@@ -36,6 +43,7 @@ class LinkedList:
             temp = temp.next
 
         temp.next = newNode
+        newNode.prev = temp 
 
     def add_after(self, x, data):
         if x is None:
@@ -44,7 +52,9 @@ class LinkedList:
         
         newNode = Node(data)
         newNode.next = x.next
+        x.next.prev = newNode
         x.next = newNode
+        newNode.prev = x
 
     def delete(self, x):
         temp = self.head
@@ -54,27 +64,29 @@ class LinkedList:
                 self.head = temp.next
                 del temp
                 return
-            
+
         while temp is not None:
             if temp.data == x:
                 break
-            
-            prev = temp
+                
             temp = temp.next
 
-        if temp is None: 
+        if temp is None:
             return
+
+        temp.prev.next = temp.next
+
+        if temp.next is not None:
+            temp.next.prev = temp.prev
         
-        prev.next = temp.next
         del temp
 
 if __name__ == "__main__":
     l = LinkedList()
-    l.add_front(0)
-    l.add_end(1)
-    l.add_end(2)
-    l.add_end(3)
+    l.add_front(1)
+    l.add_front(2)
+    l.add_front(3)
     l.add_end(4)
     l.traversal()
-    l.delete(3)
+    l.delete(2)
     l.traversal()
