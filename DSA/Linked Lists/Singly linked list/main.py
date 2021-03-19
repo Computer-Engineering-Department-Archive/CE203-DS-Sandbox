@@ -38,13 +38,18 @@ class LinkedList:
         temp.next = newNode
 
     def add_after(self, x, data):
-        if x is None:
-            print("The mentioned node is absent")
+        temp = self.head
+
+        while temp is not None and temp.data != x:
+            temp = temp.next
+
+        if temp is None:
+            print("given node is absent.")
             return
-        
+
         newNode = Node(data)
-        newNode.next = x.next
-        x.next = newNode
+        newNode.next = temp.next
+        temp.next = newNode
 
     def delete(self, x):
         temp = self.head
@@ -70,11 +75,7 @@ class LinkedList:
 
 if __name__ == "__main__":
     l = LinkedList()
-    l.add_front(0)
     l.add_end(1)
     l.add_end(2)
     l.add_end(3)
-    l.add_end(4)
-    l.traversal()
-    l.delete(3)
     l.traversal()

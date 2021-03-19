@@ -46,15 +46,20 @@ class LinkedList():
         newNode.prev = temp 
 
     def add_after(self, x, data):
-        if x is None:
-            print("The mentioned node is absent")
+        temp = self.head
+
+        while temp is not None and temp.data != x:
+            temp = temp.next
+
+        if temp is None:
+            print("given node is absent.")
             return
         
         newNode = Node(data)
-        newNode.next = x.next
-        x.next.prev = newNode
-        x.next = newNode
-        newNode.prev = x
+        newNode.next = temp.next
+        temp.next.prev = newNode
+        temp.next = newNode
+        newNode.prev = temp
 
     def delete(self, x):
         temp = self.head
@@ -86,7 +91,4 @@ if __name__ == "__main__":
     l.add_front(1)
     l.add_front(2)
     l.add_front(3)
-    l.add_end(4)
-    l.traversal()
-    l.delete(2)
     l.traversal()
