@@ -5,7 +5,7 @@ class Node():
         self.next = None
         self.prev = None
 
-class LinkedList():
+class DoublyLinkedList():
 
     def __init__(self):
         self.head = None
@@ -62,6 +62,9 @@ class LinkedList():
         newNode.prev = temp
 
     def delete(self, x):
+        if self.head is None:
+            return
+            
         temp = self.head
 
         if temp is not None:
@@ -87,8 +90,10 @@ class LinkedList():
         del temp
 
 if __name__ == "__main__":
-    l = LinkedList()
+    l = DoublyLinkedList()
+
     l.add_front(1)
     l.add_front(2)
     l.add_front(3)
+    
     l.traversal()

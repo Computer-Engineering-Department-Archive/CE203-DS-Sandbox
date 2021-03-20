@@ -20,6 +20,11 @@ This is our last node as well.
 #### Inserting a new node in Circular Linked List
 To insert a new node at any position, we will have to break the existing link and add the new node at that position.
 
+##### Insert a new node at the start
+Inserting a new node at the start of the circular singly linked list is very easy. First, a new node with given element is created. It is then added at the start of the list by linking the head node and last node to the new node.
+
+![](https://www.alphacodingskills.com/imgfiles/circular-singly-linked-list-add-node-at-start.PNG)
+
 ##### Inserting a new node after a given node
 Let's assume we want to add new node n after node a.
 

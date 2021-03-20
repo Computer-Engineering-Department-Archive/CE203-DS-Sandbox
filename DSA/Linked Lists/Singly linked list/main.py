@@ -4,7 +4,7 @@ class Node:
         self.data = data
         self.next = None
 
-class LinkedList:
+class SinglyLinkedList:
 
     def __init__(self):
         self.head = None
@@ -52,6 +52,9 @@ class LinkedList:
         temp.next = newNode
 
     def delete(self, x):
+        if self.head is None:
+            return
+
         temp = self.head
 
         if temp is not None:
@@ -68,14 +71,17 @@ class LinkedList:
             temp = temp.next
 
         if temp is None: 
+            print("given node is absent.")
             return
         
         prev.next = temp.next
         del temp
 
 if __name__ == "__main__":
-    l = LinkedList()
+    l = SinglyLinkedList()
+
     l.add_end(1)
     l.add_end(2)
     l.add_end(3)
+    
     l.traversal()

@@ -1,10 +1,11 @@
 class Node:
-
-    def __init__(self, data):
-        self.data = data
+    
+    def __init__(self, data): 
+        self.data = data 
         self.next = None
+        self.prev = None
 
-class CircularLinkedList:
+class CircularDoublyLinkedList:
 
     def __init__(self):
         self.last = None
@@ -27,17 +28,20 @@ class CircularLinkedList:
 
         print(out + 'None')
 
-    def add_first(self, data):
+    def add_front(self, data):
         newNode = Node(data)
 
-        if self.last is None:
+        if self.last == None:
             self.last = newNode
             newNode.next = newNode
+            newNode.prev = newNode
             return
 
         head = self.last.next
         self.last.next = newNode
+        newNode.prev = self.last
         newNode.next = head
+        head.prev = newNode
 
     def add_after(self, x,  data):
         if self.last is None:
@@ -55,6 +59,8 @@ class CircularLinkedList:
 
         newNode = Node(data)
         newNode.next = temp.next
+        newNode.prev = temp
+        temp.next.prev = newNode
         temp.next = newNode
 
         if temp is self.last:
@@ -65,11 +71,18 @@ class CircularLinkedList:
 
         if self.last is None:
             self.last = newNode
-            newNode.next = newNode
+            newNode.next = self.last
+            newNode.prev = self.last
             return
 
-        newNode.next = self.last.next
+        head = self.last.next
+
         self.last.next = newNode
+        newNode.prev = self.last
+
+        newNode.next = head
+        head.prev = newNode
+        
         self.last = newNode
 
     def delete(self, data):
@@ -77,36 +90,32 @@ class CircularLinkedList:
             return
 
         temp = self.last
-        prev = temp
-
-        #get the second last element
-        while prev.next != self.last:
-            prev = prev.next
 
         while temp.data != data:
-            prev = temp
             temp = temp.next
 
         if temp == self.last:
             if temp.next == temp: #only one node
                 self.last = None
             else: #more than one node
-                prev.next = temp.next
-                self.last = prev
+                temp.prev.next = temp.next
+                temp.next.prev = temp.prev
+                self.last = temp.prev
         else:
-            prev.next = temp.next
+            temp.prev.next = temp.next
+            temp.next.prev = temp.prev
 
         del temp
 
 if __name__ == "__main__":
-    l = CircularLinkedList()
+    l = CircularDoublyLinkedList()
 
-    l.add_first(1)
-    l.add_first(2)
-    l.add_first(3)
-    
+    l.add_end(1)
+    l.add_end(2)
+    l.add_end(3)
+
     l.traversal()
 
-    l.delete(3)
-
+    l.delete(1)
+    
     l.traversal()

@@ -30,13 +30,13 @@ So, we start a loop from the head of the linked list and end it when the node is
 
 ![](https://www.codesdope.com/staticroot/images/ds/link13.gif)
 
-#### Inserting Nodes in a Linked List
+#### Inserting nodes in a Linked List
 There can be three different positions where we can insert a new node in a linked list:
 - At the beginning of the list.
 - At the end of the list.
 - Anywhere except the above-mentioned positions.
 
-##### Inserting a New Node at the Beginning of a Linked List
+##### Inserting a new node at the beginning of a Linked List
 The new node is always added before the head of the given Linked List. And newly added node becomes the new head of the Linked List.
 
 For example lets assume we want to add node n to our list.
@@ -51,12 +51,12 @@ Since the head should always point to the first element of the linked list, so w
 
 ![](https://www.codesdope.com/staticroot/images/ds/link17.png)
 
-##### Inserting a New Node at the End of a Linked List.
+##### Inserting a new node at the end of a Linked List
 To insert a node at the end of a linked list, we just iterate to the last of the linked list and add a new node there. This is described in the picture given below.
 
 ![](https://www.codesdope.com/staticroot/images/ds/link18.gif)
 
-##### Inserting a New Node in the Middle of a Linked List
+##### Inserting a new node in the middle of a Linked List
 To insert a new node in the middle of a linked list, we need to break the existing links and create new links. This will be clear from the picture given below.
 
 ![](https://www.codesdope.com/staticroot/images/ds/link20.png)
@@ -73,7 +73,7 @@ This will be clear from the picture given below.
 
 ![](https://www.codesdope.com/staticroot/images/ds/link19.gif)
 
-#### Deleting a Node from a Linked List
+#### Deleting a node from a Linked List
 We delete any node of a linked list by connecting the predecessor node of the node to be deleted by the successor node of the node. For example, if we have a linked list a → b → c, then to delete the node 'b', we will connect 'a' to 'c' i.e., a → c. But this will make the node 'b' inaccessible and this type of inaccessible nodes are called garbage.
 
 We might need to clean this garbage ourself in some languages like C by using the free function while some languages like Java does it automatically.
